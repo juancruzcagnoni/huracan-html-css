@@ -43,7 +43,7 @@ main{
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 20px);
+    height: calc(100vh - 0px);
 }
 
 .noticiamain{
