@@ -14,6 +14,10 @@
 /* NAVBAR */
 .navbar{
     background-color: rgb(22, 22, 22);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
 
 .navbar-nav a{
@@ -27,6 +31,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 576px){
+    .escudo{
+        content: url(../img/escudo.svg);
+    }
+}
 
 
 /* MAIN  */
@@ -34,7 +43,7 @@ main{
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 20px);
 }
 
 .noticiamain{
@@ -78,13 +87,31 @@ h3{
     color: rgb(247, 247, 247);
 }
 
+/* FUTBOL */
+.futbol{
+    margin-top: 100px;
+}
+
+/* HOCKEY */
+.hockey{
+    margin-top: 100px;
+}
+
 /* HISTORIA */
+.historia{
+    margin-top: 100px;
+}
+
 .img-historia{
     border-radius: 10px;
 }
 
 /* CONTACTO */
 .contacto{
+    margin-top: 100px;
+}
+
+.contacto-card{
     background-color: rgb(22, 22, 22);
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
