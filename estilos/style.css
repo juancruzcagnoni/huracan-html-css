@@ -1,163 +1,162 @@
+/* VARIABLES */
 /* NORMALIZE */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.container{
-    max-width: 85%;
-    margin: 0 auto;
+.container {
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 /* NAVBAR */
-.navbar{
-    background-color: rgb(22, 22, 22);
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
+.navbar {
+  background-color: rgb(22, 22, 22);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
-.navbar-nav a{
-    color: rgb(247, 247, 247);
-    font-weight: bold;
-    font-size: 14px;
+.navbar-nav a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.navbar-nav a:hover{
-    color: rgb(244, 9, 9);
-    transition: all 0.3s ease-in-out;
+.navbar-nav a:hover {
+  color: rgb(244, 9, 9);
+  transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 576px){
-    .escudo{
-        content: url(../img/escudo.svg);
-    }
+@media (max-width: 576px) {
+  .escudo {
+    content: url(../img/escudo.svg);
+  }
 }
-
-
 /* MAIN  */
-main{
-    background-image: url(../img/noticiamain.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: calc(100vh - 0px);
+main {
+  background-image: url(../img/noticiamain.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: calc(100vh - 0px);
 }
 
-.noticiamain{
-    color:#fff;
-    height: 160px; 
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.522);
-    border-bottom: rgb(244, 9, 9) 20px solid;
-    overflow: hidden;
+.noticiamain {
+  color: rgb(255, 255, 255);
+  height: 160px;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 0.579);
+  border-bottom: rgb(244, 9, 9) solid 20px;
+  overflow: hidden;
 }
 
-.noticiamain p{
-    color: rgba(255, 255, 255, 0.568);
+.noticiamain p {
+  color: rgba(255, 255, 255, 0.568);
 }
 
 /* ULTIMAS NOTICIAS */
-h3{
-    border-bottom: solid 1px rgb(22, 22, 22);
+h3 {
+  border-bottom: solid 1px rgb(22, 22, 22);
 }
 
-.btn{
-    font-weight: bold;
+.btn {
+  font-weight: bold;
 }
 
-.btn:hover{
-    color: #fff;
-    background-color: red;
-    transition: all 0.2s ease-in-out;
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(244, 9, 9);
+  transition: all 0.2s ease-in-out;
 }
 
-.card{
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 0;
-    overflow: hidden;
+.card {
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 0;
+  overflow: hidden;
 }
 
-.partido{
-    background-color: rgb(22, 22, 22);
-    border-bottom: 10px solid rgb(244, 9, 9);
-    color: rgb(247, 247, 247);
+.partido {
+  background-color: rgb(22, 22, 22);
+  border-bottom: 10px solid rgb(244, 9, 9);
+  color: rgb(255, 255, 255);
 }
 
 /* FUTBOL */
-.futbol{
-    margin-top: 100px;
+.futbol {
+  margin-top: 100px;
 }
 
 /* HOCKEY */
-.hockey{
-    margin-top: 100px;
+.hockey {
+  margin-top: 100px;
 }
 
 /* HISTORIA */
-.historia{
-    margin-top: 100px;
+.historia {
+  margin-top: 100px;
 }
 
-.img-historia{
-    border-radius: 10px;
+.img-historia {
+  border-radius: 10px;
 }
 
 /* CONTACTO */
-.contacto{
-    margin-top: 100px;
+.contacto {
+  margin-top: 100px;
 }
 
-.contacto-card{
-    background-color: rgb(22, 22, 22);
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.contacto-card {
+  background-color: rgb(22, 22, 22);
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.enviar{
-    background-color: rgb(244, 9, 9);
+.enviar {
+  background-color: rgb(244, 9, 9);
 }
 
 /* FOOTER */
-.footer{
-    background-color: rgb(22, 22, 22);
-    color: rgb(247, 247, 247);
-    border-top: #F40909 20px solid;
-    height: 340px;
+.footer {
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 255, 255);
+  border-top: rgb(244, 9, 9) 20px solid;
+  height: 340px;
 }
 
-.footer ul{
-    margin-top: 35px;
+.footer ul {
+  margin-top: 35px;
 }
 
-.footer i{
-    color: #Fff;
-    font-size: 35px;
+.footer i {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
 }
 
-.footer i:hover{
-    color: rgb(244, 9, 9);
-    transition: all 0.3s ease-in-out;
+.footer i:hover {
+  color: rgb(244, 9, 9);
+  transition: all 0.3s ease-in-out;
 }
 
-.segui{
-    animation: movimiento 2s ease-out infinite;
+.segui {
+  animation: movimiento 2s ease-out infinite;
 }
 
 @keyframes movimiento {
-    0%{
-        transform: translateY(0px);
-    }
-
-    50%{
-        transform: translateY(20px);
-    }
-
-    100%{
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
