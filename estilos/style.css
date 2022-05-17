@@ -3,8 +3,9 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -14,7 +15,7 @@
 
 /* NAVBAR */
 .navbar {
-  background-color: rgb(22, 22, 22);
+  background-color: #161616;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -22,13 +23,14 @@
 }
 
 .navbar-nav a {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bold;
   font-size: 14px;
 }
 
 .navbar-nav a:hover {
-  color: rgb(244, 9, 9);
+  color: #f40909;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -37,6 +39,7 @@
     content: url(../img/escudo.svg);
   }
 }
+
 /* MAIN  */
 main {
   background-image: url(../img/noticiamain.jpg);
@@ -47,11 +50,11 @@ main {
 }
 
 .noticiamain {
-  color: rgb(255, 255, 255);
+  color: white;
   height: 160px;
   width: 100%;
-  background-color: rgba(22, 22, 22, 0.579);
-  border-bottom: rgb(244, 9, 9) solid 20px;
+  background-color: rgba(22, 22, 22, 0.845);
+  border-bottom: #f40909 solid 20px;
   overflow: hidden;
 }
 
@@ -60,72 +63,60 @@ main {
 }
 
 /* ULTIMAS NOTICIAS */
-h3 {
-  border-bottom: solid 1px rgb(22, 22, 22);
-}
-
 .btn {
   font-weight: bold;
+  color: #f40909;
 }
 
 .btn:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(244, 9, 9);
+  color: white;
+  background-color: #f40909;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .card {
   border-radius: 8px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
+          box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
   border: 0;
   overflow: hidden;
 }
 
 .partido {
-  background-color: rgb(22, 22, 22);
-  border-bottom: 10px solid rgb(244, 9, 9);
-  color: rgb(255, 255, 255);
+  background-color: #161616;
+  border-bottom: 10px solid #f40909;
+  color: white;
 }
 
 /* FUTBOL */
-.futbol {
+.futbol, .hockey, .historia, .contacto {
   margin-top: 100px;
 }
 
 /* HOCKEY */
-.hockey {
-  margin-top: 100px;
-}
-
 /* HISTORIA */
-.historia {
-  margin-top: 100px;
-}
-
 .img-historia {
   border-radius: 10px;
 }
 
 /* CONTACTO */
-.contacto {
-  margin-top: 100px;
-}
-
 .contacto-card {
-  background-color: rgb(22, 22, 22);
   border-radius: 8px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
+          box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
+  background-color: #161616;
 }
 
 .enviar {
-  background-color: rgb(244, 9, 9);
+  background-color: #f40909;
 }
 
 /* FOOTER */
 .footer {
-  background-color: rgb(22, 22, 22);
-  color: rgb(255, 255, 255);
-  border-top: rgb(244, 9, 9) 20px solid;
+  background-color: #161616;
+  color: white;
+  border-top: #f40909 20px solid;
   height: 340px;
 }
 
@@ -134,29 +125,48 @@ h3 {
 }
 
 .footer i {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 35px;
 }
 
 .footer i:hover {
-  color: rgb(244, 9, 9);
+  color: #f40909;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .segui {
-  animation: movimiento 2s ease-out infinite;
+  -webkit-animation: movimiento 2s ease-out infinite;
+          animation: movimiento 2s ease-out infinite;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 @keyframes movimiento {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   50% {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
-
 /*# sourceMappingURL=style.css.map */

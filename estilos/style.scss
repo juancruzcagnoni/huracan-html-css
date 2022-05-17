@@ -1,10 +1,16 @@
 /* VARIABLES */
-$color1: rgb(244, 9, 9);
-$color2: rgb(22, 22, 22);
-$color3: rgb(255, 255, 255);
+$colores: (
+    color1: rgb(244, 9, 9),
+    color2: rgb(22, 22, 22),
+    color3: rgb(255, 255, 255),
+);
 
+$color1: map-get($colores, color1);
+$color2: map-get($colores, color2);
+$color3: map-get($colores, color3);
 
 /* NORMALIZE */
+
 *{
     padding: 0;
     margin: 0;
@@ -18,6 +24,7 @@ $color3: rgb(255, 255, 255);
 }
 
 /* NAVBAR */
+
 .navbar{
     background-color: $color2;
     position: fixed;
@@ -49,6 +56,7 @@ $color3: rgb(255, 255, 255);
 
 
 /* MAIN  */
+
 main{
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
@@ -61,7 +69,7 @@ main{
     color: $color3;
     height: 160px; 
     width: 100%;
-    background-color: rgba(22, 22, 22, 0.579);
+    background-color: rgba(22, 22, 22, 0.845);
     border-bottom: $color1 solid 20px;
     overflow: hidden;
 }
@@ -72,13 +80,18 @@ main{
     }
 }
 
-/* ULTIMAS NOTICIAS */
-h3{
-    border-bottom: solid 1px $color2;
+// MIXIN
+
+@mixin card ($radius, $eje1, $eje2, $eje3){
+    border-radius: $radius;
+    box-shadow: rgba(64, 64, 64, 0.501) $eje1 $eje2 $eje3 $eje1;
 }
+
+/* ULTIMAS NOTICIAS */
 
 .btn{
     font-weight: bold;
+    color: $color1;
 }
 
 .btn:hover{
@@ -88,8 +101,7 @@ h3{
 }
 
 .card{
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @include card (8px, 0px, 2px, 8px);
     border: 0;
     overflow: hidden;
 }
@@ -101,18 +113,21 @@ h3{
 }
 
 /* FUTBOL */
+
 .futbol{
     margin-top: 100px;
 }
 
 /* HOCKEY */
+
 .hockey{
-    margin-top: 100px;
+    @extend .futbol;
 }
 
 /* HISTORIA */
+
 .historia{
-    margin-top: 100px;
+    @extend .futbol;
 }
 
 .img-historia{
@@ -120,14 +135,14 @@ h3{
 }
 
 /* CONTACTO */
+
 .contacto{
-    margin-top: 100px;
+    @extend .futbol;
 }
 
 .contacto-card{
+    @include card (8px, 0px, 2px, 8px);
     background-color: $color2;
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .enviar{
@@ -135,6 +150,7 @@ h3{
 }
 
 /* FOOTER */
+
 .footer{
     background-color: $color2;
     color: $color3;
