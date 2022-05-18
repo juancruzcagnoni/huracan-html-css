@@ -60,14 +60,14 @@ $color3: map-get($colores, color3);
 main{
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     width: 100%;
     height: calc(100vh - 0px);
 }
 
 .noticiamain{
     color: $color3;
-    height: 240px; 
+    height: 220px; 
     width: 100%;
     background-color: rgba(22, 22, 22, 0.845);
     border-bottom: $color1 solid 20px;
@@ -87,14 +87,34 @@ main{
 
 @mixin card ($radius, $eje1, $eje2, $eje3){
     border-radius: $radius;
-    box-shadow: rgba(64, 64, 64, 0.501) $eje1 $eje2 $eje3 $eje1;
+    box-shadow: rgba(0, 0, 0, 0.15) $eje1 $eje2 $eje3 $eje1;
+}
+
+@mixin card-hover ($eje1, $eje2, $eje3, $time){
+    box-shadow: rgba(0, 0, 0, 0.35) $eje1 $eje2 $eje3 $eje1;
+    transition: all $time ease-in-out;
 }
 
 /* ULTIMAS NOTICIAS */
 
+.ultimasnoticias{
+    background-image: url(../img/fondo.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+h4{
+    font-weight: normal;
+    color: $color3;
+}
+
+h5{
+    border-bottom: solid 0.5px $color1;
+}
+
 .btn{
     font-weight: bold;
-    color: $color1;
+    color: $color1;  
 }
 
 .btn:hover{
@@ -104,15 +124,35 @@ main{
 }
 
 .card{
-    @include card (8px, 0px, 2px, 8px);
+    @include card (8px, 0px, 3px, 3px);
     border: 0;
     overflow: hidden;
 }
 
+.card:hover{
+    @include card-hover (0px, 3px, 3px, 0.3s)
+}
+
 .partido{
-    background-color: $color2;
+    background-color: $color3;
     border-bottom: 10px solid $color1;
-    color: $color3;
+    color: $color2;
+}
+
+.partido{
+    h5{
+        border: none;
+    }
+}
+
+.img-card:hover{
+    color: black;
+}
+
+// VIDEO
+
+.video{
+    padding-bottom: 50px;
 }
 
 /* FUTBOL */
@@ -144,7 +184,7 @@ main{
 }
 
 .contacto-card{
-    @include card (8px, 0px, 2px, 8px);
+    @include card (8px, 0px, 3px, 3px);
     background-color: $color2;
 }
 

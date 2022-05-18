@@ -44,14 +44,14 @@
 main {
   background-image: url(../img/noticiamain.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: 100%;
   height: calc(100vh - 0px);
 }
 
 .noticiamain {
   color: white;
-  height: 240px;
+  height: 220px;
   width: 100%;
   background-color: rgba(22, 22, 22, 0.845);
   border-bottom: #f40909 solid 20px;
@@ -68,6 +68,21 @@ main {
 }
 
 /* ULTIMAS NOTICIAS */
+.ultimasnoticias {
+  background-image: url(../img/fondo.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+h4 {
+  font-weight: normal;
+  color: white;
+}
+
+h5 {
+  border-bottom: solid 0.5px #f40909;
+}
+
 .btn {
   font-weight: bold;
   color: #f40909;
@@ -82,16 +97,35 @@ main {
 
 .card {
   border-radius: 8px;
-  -webkit-box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
-          box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
   overflow: hidden;
 }
 
+.card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .partido {
-  background-color: #161616;
+  background-color: white;
   border-bottom: 10px solid #f40909;
-  color: white;
+  color: #161616;
+}
+
+.partido h5 {
+  border: none;
+}
+
+.img-card:hover {
+  color: black;
+}
+
+.video {
+  padding-bottom: 50px;
 }
 
 /* FUTBOL */
@@ -108,8 +142,8 @@ main {
 /* CONTACTO */
 .contacto-card {
   border-radius: 8px;
-  -webkit-box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
-          box-shadow: rgba(64, 64, 64, 0.501) 0px 2px 8px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   background-color: #161616;
 }
 
