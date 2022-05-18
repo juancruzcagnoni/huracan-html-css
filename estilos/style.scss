@@ -60,24 +60,27 @@ $color3: map-get($colores, color3);
 main{
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     width: 100%;
     height: calc(100vh - 0px);
 }
 
 .noticiamain{
     color: $color3;
-    height: 160px; 
+    height: 240px; 
     width: 100%;
     background-color: rgba(22, 22, 22, 0.845);
     border-bottom: $color1 solid 20px;
     overflow: hidden;
 }
 
-.noticiamain {
-    p{
-        color: rgba(255, 255, 255, 0.568);
-    }
+.noticia{
+    color: rgb(122, 122, 122);
+}
+
+.subtexto{
+    color: $color3;
+    font-weight: 200;
 }
 
 // MIXIN
