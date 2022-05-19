@@ -18,9 +18,8 @@ $color3: map-get($colores, color3);
     font-family: 'Inter', sans-serif;
 }
 
-.container {
-    max-width: 85%;
-    margin: 0 auto;
+.container{
+    max-width: 95%;
 }
 
 /* NAVBAR */
@@ -86,14 +85,9 @@ main {
 
 // MIXIN
 
-@mixin card ($radius, $eje1, $eje2, $eje3) {
+@mixin card ($radius, $eje1, $eje2, $eje3, $eje4) {
     border-radius: $radius;
-    box-shadow: rgba(0, 0, 0, 0.15) $eje1 $eje2 $eje3 $eje1;
-}
-
-@mixin card-hover ($eje1, $eje2, $eje3, $time) {
-    box-shadow: rgba(0, 0, 0, 0.35) $eje1 $eje2 $eje3 $eje1;
-    transition: all $time ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.12) $eje1 $eje2 $eje3, rgba(0, 0, 0, 0.24) $eje1 $eje2 $eje4;
 }
 
 /* ULTIMAS NOTICIAS */
@@ -107,7 +101,7 @@ main {
         font-size: 12px;
         color: $color2;
     }
-
+    
 }
 
 .linkareco:hover{
@@ -135,13 +129,9 @@ h5 {
 }
 
 .card {
-    @include card (8px, 0px, 3px, 3px);
+    @include card (4px, 0px, 1px, 3px, 2px);
     border: 0;
     overflow: hidden;
-}
-
-.card:hover {
-    @include card-hover (0px, 3px, 3px, 0.3s)
 }
 
 .partido {
@@ -225,7 +215,7 @@ h5 {
 }
 
 .contacto-card {
-    @include card (8px, 0px, 3px, 3px);
+    @include card (4px, 0px, 1px, 3px, 2px);
     background-color: $color2;
 }
 
