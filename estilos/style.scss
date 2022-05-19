@@ -11,21 +11,21 @@ $color3: map-get($colores, color3);
 
 /* NORMALIZE */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-.container{
+.container {
     max-width: 85%;
     margin: 0 auto;
 }
 
 /* NAVBAR */
 
-.navbar{
+.navbar {
     background-color: $color2;
     position: fixed;
     width: 100%;
@@ -34,22 +34,22 @@ $color3: map-get($colores, color3);
 }
 
 .navbar-nav {
-    a{
-    color: $color3;
-    font-weight: bold;
-    font-size: 14px;
+    a {
+        color: $color3;
+        font-weight: bold;
+        font-size: 14px;
     }
 }
 
 .navbar-nav {
-    a:hover{
+    a:hover {
         color: $color1;
         transition: all 0.3s ease-in-out;
     }
 }
 
-@media (max-width: 576px){
-    .escudo{
+@media (max-width: 576px) {
+    .escudo {
         content: url(../img/escudo.svg);
     }
 }
@@ -57,184 +57,211 @@ $color3: map-get($colores, color3);
 
 /* MAIN  */
 
-main{
+main {
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: calc(100vh - 0px);
+    height: calc(100vh);
 }
 
-.noticiamain{
+.noticiamain {
     color: $color3;
-    height: 220px; 
+    height: 220px;
     width: 100%;
-    background-color: rgba(22, 22, 22, 0.845);
-    border-bottom: $color1 solid 20px;
+    background: rgb(22, 22, 22);
+    background: linear-gradient(0deg, rgba(22, 22, 22, 0.722) 37%, rgba(14, 14, 14, 0) 100%);
+    border-bottom: $color1 solid 10px;
     overflow: hidden;
 }
 
-.noticia{
-    color: rgb(122, 122, 122);
+.noticia {
+    color: rgb(200, 200, 200);
 }
 
-.subtexto{
+.subtexto {
     color: $color3;
     font-weight: 200;
 }
 
 // MIXIN
 
-@mixin card ($radius, $eje1, $eje2, $eje3){
+@mixin card ($radius, $eje1, $eje2, $eje3) {
     border-radius: $radius;
     box-shadow: rgba(0, 0, 0, 0.15) $eje1 $eje2 $eje3 $eje1;
 }
 
-@mixin card-hover ($eje1, $eje2, $eje3, $time){
+@mixin card-hover ($eje1, $eje2, $eje3, $time) {
     box-shadow: rgba(0, 0, 0, 0.35) $eje1 $eje2 $eje3 $eje1;
     transition: all $time ease-in-out;
 }
 
 /* ULTIMAS NOTICIAS */
 
-.ultimasnoticias{
-    background-image: url(../img/fondo.svg);
-    background-size: cover;
-    background-position: center center;
-}
-
-h4{
+h4 {
     font-weight: normal;
-    color: $color3;
+    color: $color2;
 }
 
-h5{
+h5 {
     border-bottom: solid 0.5px $color1;
 }
 
-.btn{
+.btn {
     font-weight: bold;
-    color: $color1;  
+    color: $color1;
 }
 
-.btn:hover{
+.btn:hover {
     color: $color3;
     background-color: $color1;
     transition: all 0.2s ease-in-out;
 }
 
-.card{
+.card {
     @include card (8px, 0px, 3px, 3px);
     border: 0;
     overflow: hidden;
 }
 
-.card:hover{
+.card:hover {
     @include card-hover (0px, 3px, 3px, 0.3s)
 }
 
-.partido{
-    background-color: $color3;
+.partido {
+    background-color: $color2;
     border-bottom: 10px solid $color1;
-    color: $color2;
+    color: $color3;
+    padding: 0;
 }
 
-.partido{
-    h5{
+.partido {
+    h5 {
         border: none;
     }
 }
 
-.img-card:hover{
+.img-card:hover {
     color: black;
+}
+
+.card-extra {
+    @extend .partido;
+}
+
+.card-extra {
+    h5 {
+        text-align: center;
+        border-bottom: 0.5px solid rgb(244, 9, 9);
+    }
+}
+
+.tabla {
+    p {
+        margin: 0;
+    }
+}
+
+.puntos {
+    color: $color1;
+    font-weight: bold;
+}
+
+.pj {
+    color: rgba(224, 224, 224, 0.638);
 }
 
 // VIDEO
 
-.video{
+.video {
     padding-bottom: 50px;
 }
 
 /* FUTBOL */
 
-.futbol{
+.futbol {
     margin-top: 100px;
 }
 
 /* HOCKEY */
 
-.hockey{
+.hockey {
     @extend .futbol;
 }
 
 /* HISTORIA */
 
-.historia{
+.historia {
     @extend .futbol;
 }
 
-.img-historia{
+.img-historia {
     border-radius: 10px;
 }
 
 /* CONTACTO */
 
-.contacto{
+.contacto {
     @extend .futbol;
 }
 
-.contacto-card{
+.contacto-card {
     @include card (8px, 0px, 3px, 3px);
     background-color: $color2;
 }
 
-.enviar{
+.enviar {
     background-color: $color1;
 }
 
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: $color2;
     color: $color3;
-    border-top: $color1 20px solid;
+    border-top: $color1 10px solid;
     height: 340px;
 }
 
+.copy{
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+}
+
 .footer {
-    ul{
+    ul {
         margin-top: 35px;
     }
 }
 
 .footer {
-    i{
+    i {
         color: $color3;
         font-size: 35px;
     }
 }
 
 .footer {
-    i:hover{
+    i:hover {
         color: $color1;
         transition: all 0.3s ease-in-out;
     }
 }
 
-.segui{
+.segui {
     animation: movimiento 2s ease-out infinite;
 }
 
 @keyframes movimiento {
-    0%{
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
+    50% {
         transform: translateY(20px);
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
