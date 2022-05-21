@@ -192,6 +192,13 @@ h5 {
     margin-top: 100px;
 }
 
+.img-fh{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
 /* HOCKEY */
 
 .hockey {
@@ -219,6 +226,32 @@ h5 {
     background-color: $color2;
 }
 
+.contacto-card{
+    label{
+        color: $color3;
+    }
+
+    h5{
+        color: $color1;
+        border-bottom: none;
+    }
+
+    p{
+        color: $color3;
+    }
+    
+}
+
+.contacto-r{
+    border-left: solid 0.5px $color1;
+}
+
+@media (max-width: 768px){
+    .contacto-r{
+        border-left: none;
+    }
+}
+
 .enviar {
     background-color: $color1;
 }
@@ -227,9 +260,15 @@ h5 {
 
 .footer {
     background-color: $color2;
+    border-bottom: $color1 5px solid;
     color: $color3;
-    border-top: $color1 10px solid;
-    height: 340px;
+    height: 330px;
+}
+
+@media (min-width:768px){
+    .footer{
+        height: 260px;
+    }
 }
 
 .copy{
@@ -239,14 +278,17 @@ h5 {
 
 .footer {
     ul {
-        margin-top: 35px;
+        margin-top: 25px;
     }
 }
 
 .footer {
     i {
+        border-radius: 4px;
+        padding: 8px;
         color: $color3;
-        font-size: 35px;
+        font-size: 25px;
+        background-color: rgb(9, 9, 9);
     }
 }
 
@@ -255,6 +297,11 @@ h5 {
         color: $color1;
         transition: all 0.3s ease-in-out;
     }
+}
+
+
+.footer-bottom{
+    border-top: 0.5px solid rgba(124, 124, 124, 0.159);
 }
 
 .segui {
