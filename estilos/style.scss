@@ -15,12 +15,13 @@ $color3: map-get($colores, color3);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .container{
     max-width: 95%;
 }
+
 
 /* NAVBAR */
 
@@ -56,6 +57,14 @@ $color3: map-get($colores, color3);
 
 /* MAIN  */
 
+.body{
+    background-color: rgb(243, 226, 226);
+}
+
+.body1{
+    background-color: $color3;
+}
+
 main {
     background-image: url(../img/noticiamain.jpg);
     background-size: cover;
@@ -63,6 +72,7 @@ main {
     width: 100%;
     height: calc(100vh);
 }
+
 
 .noticiamain {
     color: $color3;
@@ -85,9 +95,9 @@ main {
 
 // MIXIN
 
-@mixin card ($radius, $eje1, $eje2, $eje3, $eje4) {
+@mixin card ($radius, $eje1, $eje2, $eje3) {
     border-radius: $radius;
-    box-shadow: rgba(0, 0, 0, 0.12) $eje1 $eje2 $eje3, rgba(0, 0, 0, 0.24) $eje1 $eje2 $eje4;
+    box-shadow: rgba(0, 0, 0, 0.1) $eje1 $eje2 $eje3;
 }
 
 /* ULTIMAS NOTICIAS */
@@ -108,13 +118,22 @@ main {
     font-weight: bold;
 }
 
-h4 {
-    font-weight: normal;
-    color: $color2;
-}
 
 h5 {
     border-bottom: solid 0.5px $color1;
+}
+
+.titles{
+    
+    h5{
+        border-bottom: none;
+        color: $color1;
+    }
+
+    i{
+        font-size: 20px;
+        color: $color1;
+    }
 }
 
 .btn {
@@ -129,15 +148,29 @@ h5 {
 }
 
 .card {
-    @include card (4px, 0px, 1px, 3px, 2px);
+    @include card (4px, 0px, 4px, 12px);
     border: 0;
     overflow: hidden;
 }
 
+.card-notice{
+    transition: all 0.3s ease-in-out 0.1s;
+    
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
+}
+
+.card-notice:hover{
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.233) 0px 4px 12px;
+}
+
 .partido {
-    background-color: $color2;
+    background-color: $color3;
     border-bottom: 10px solid $color1;
-    color: $color3;
+    color: $color2;
     padding: 0;
 }
 
@@ -177,13 +210,27 @@ h5 {
 }
 
 .pj {
-    color: rgba(224, 224, 224, 0.638);
+    color: rgba(72, 72, 72, 0.638);
 }
 
 // VIDEO
 
 .video {
     padding-bottom: 50px;
+}
+
+.container-video{
+    border-radius: 5px;
+}
+
+.video-text{
+    line-height: 70px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.video-text-span{
+    color: $color1;
 }
 
 /* FUTBOL */
@@ -197,6 +244,13 @@ h5 {
     width: 100%;
     height: 100%;
     border-radius: 4px;
+}
+
+.titles-f{
+    h5{
+
+        border-bottom: none
+    }
 }
 
 /* HOCKEY */
@@ -222,7 +276,7 @@ h5 {
 }
 
 .contacto-card {
-    @include card (4px, 0px, 1px, 3px, 2px);
+    @include card (4px, 0px, 4px, 12px);
     background-color: $color2;
 }
 

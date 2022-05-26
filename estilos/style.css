@@ -5,7 +5,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -40,6 +40,14 @@
 }
 
 /* MAIN  */
+.body {
+  background-color: #f3e2e2;
+}
+
+.body1 {
+  background-color: white;
+}
+
 main {
   background-image: url(../img/noticiamain.jpg);
   background-size: cover;
@@ -83,13 +91,18 @@ main {
   font-weight: bold;
 }
 
-h4 {
-  font-weight: normal;
-  color: #161616;
-}
-
 h5 {
   border-bottom: solid 0.5px #f40909;
+}
+
+.titles h5 {
+  border-bottom: none;
+  color: #f40909;
+}
+
+.titles i {
+  font-size: 20px;
+  color: #f40909;
 }
 
 .btn {
@@ -106,16 +119,33 @@ h5 {
 
 .card {
   border-radius: 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 0;
   overflow: hidden;
 }
 
+.card-notice {
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.card-notice a {
+  text-decoration: none;
+  color: #161616;
+}
+
+.card-notice:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.233) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.233) 0px 4px 12px;
+}
+
 .partido, .card-extra {
-  background-color: #161616;
+  background-color: white;
   border-bottom: 10px solid #f40909;
-  color: white;
+  color: #161616;
   padding: 0;
 }
 
@@ -145,11 +175,25 @@ h5 {
 }
 
 .pj {
-  color: rgba(224, 224, 224, 0.638);
+  color: rgba(72, 72, 72, 0.638);
 }
 
 .video {
   padding-bottom: 50px;
+}
+
+.container-video {
+  border-radius: 5px;
+}
+
+.video-text {
+  line-height: 70px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.video-text-span {
+  color: #f40909;
 }
 
 /* FUTBOL */
@@ -165,6 +209,10 @@ h5 {
   border-radius: 4px;
 }
 
+.titles-f h5 {
+  border-bottom: none;
+}
+
 /* HOCKEY */
 /* HISTORIA */
 .img-historia {
@@ -174,8 +222,8 @@ h5 {
 /* CONTACTO */
 .contacto-card {
   border-radius: 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #161616;
 }
 
