@@ -102,9 +102,11 @@ h5 {
 }
 
 .btn {
+  text-decoration: none;
+  color: #f40909;
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .btn:hover {
@@ -125,11 +127,6 @@ h5 {
 .card-notice {
   -webkit-transition: all 0.3s ease-in-out 0.1s;
   transition: all 0.3s ease-in-out 0.1s;
-}
-
-.card-notice a {
-  text-decoration: none;
-  color: #f40909;
 }
 
 .card-notice:hover {

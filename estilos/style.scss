@@ -132,9 +132,11 @@ h5 {
 }
 
 .btn {
+    text-decoration: none;
+    color: $color1;
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
 }
 
 .btn:hover {
@@ -151,11 +153,6 @@ h5 {
 
 .card-notice{
     transition: all 0.3s ease-in-out 0.1s;
-    
-    a{
-        text-decoration: none;
-        color: $color1;
-    }
 }
 
 .card-notice:hover{
