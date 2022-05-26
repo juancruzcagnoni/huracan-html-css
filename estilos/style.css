@@ -40,14 +40,8 @@
 }
 
 /* MAIN  */
-.body {
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/main.jpg);
-}
-
 .body1 {
-  background-color: white;
+  background-color: #f6efef;
 }
 
 main {
@@ -263,6 +257,7 @@ h5 {
 
 .enviar {
   background-color: #f40909;
+  border-radius: 4px;
 }
 
 /* FOOTER */
@@ -304,40 +299,5 @@ h5 {
 
 .footer-bottom {
   border-top: 0.5px solid rgba(124, 124, 124, 0.159);
-}
-
-.segui {
-  -webkit-animation: movimiento 2s ease-out infinite;
-          animation: movimiento 2s ease-out infinite;
-}
-
-@-webkit-keyframes movimiento {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes movimiento {
-  0% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
 }
 /*# sourceMappingURL=style.css.map */

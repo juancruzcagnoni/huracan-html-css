@@ -56,14 +56,8 @@ $color3: map-get($colores, color3);
 
 /* MAIN  */
 
-.body{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../img/main.jpg);
-}
-
 .body1{
-    background-color: $color3;
+    background-color: rgb(246, 239, 239);
 }
 
 main {
@@ -318,6 +312,7 @@ h5 {
 
 .enviar {
     background-color: $color1;
+    border-radius: 4px;
 }
 
 /* FOOTER */
@@ -366,22 +361,4 @@ h5 {
 
 .footer-bottom{
     border-top: 0.5px solid rgba(124, 124, 124, 0.159);
-}
-
-.segui {
-    animation: movimiento 2s ease-out infinite;
-}
-
-@keyframes movimiento {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
 }
