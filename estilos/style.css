@@ -129,6 +129,11 @@ h5 {
   transition: all 0.3s ease-in-out 0.1s;
 }
 
+.card-notice a {
+  text-decoration: none;
+  color: #161616;
+}
+
 .card-notice:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);

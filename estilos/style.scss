@@ -153,6 +153,11 @@ h5 {
 
 .card-notice{
     transition: all 0.3s ease-in-out 0.1s;
+
+    a{
+        text-decoration: none;
+        color: $color2;
+    }
 }
 
 .card-notice:hover{
