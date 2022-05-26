@@ -41,7 +41,9 @@
 
 /* MAIN  */
 .body {
-  background-color: #f3e2e2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/main.jpg);
 }
 
 .body1 {
@@ -106,8 +108,9 @@ h5 {
 }
 
 .btn {
-  font-weight: bold;
-  color: #f40909;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
 .btn:hover {
@@ -132,7 +135,7 @@ h5 {
 
 .card-notice a {
   text-decoration: none;
-  color: #161616;
+  color: #f40909;
 }
 
 .card-notice:hover {
@@ -151,6 +154,14 @@ h5 {
 
 .partido h5, .card-extra h5 {
   border: none;
+}
+
+.partido p, .card-extra p {
+  color: rgba(22, 22, 22, 0.601);
+}
+
+.partido h6, .card-extra h6 {
+  font-size: 20px;
 }
 
 .img-card {

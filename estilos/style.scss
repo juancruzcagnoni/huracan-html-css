@@ -22,7 +22,6 @@ $color3: map-get($colores, color3);
     max-width: 95%;
 }
 
-
 /* NAVBAR */
 
 .navbar {
@@ -58,7 +57,9 @@ $color3: map-get($colores, color3);
 /* MAIN  */
 
 .body{
-    background-color: rgb(243, 226, 226);
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/main.jpg);
 }
 
 .body1{
@@ -137,8 +138,9 @@ h5 {
 }
 
 .btn {
-    font-weight: bold;
-    color: $color1;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
 }
 
 .btn:hover {
@@ -158,7 +160,7 @@ h5 {
     
     a{
         text-decoration: none;
-        color: $color2;
+        color: $color1;
     }
 }
 
@@ -177,6 +179,14 @@ h5 {
 .partido {
     h5 {
         border: none;
+    }
+
+    p{
+        color: rgba(22, 22, 22, 0.601);
+    }
+
+    h6{
+        font-size: 20px;
     }
 }
 
