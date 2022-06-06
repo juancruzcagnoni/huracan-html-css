@@ -12,6 +12,11 @@
   max-width: 95%;
 }
 
+.container2 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 /* NAVBAR */
 .navbar {
   background-color: #161616;
@@ -36,6 +41,9 @@
 @media (max-width: 576px) {
   .escudo {
     content: url(../img/escudo.svg);
+  }
+  .container2 {
+    max-width: 85%;
   }
 }
 
