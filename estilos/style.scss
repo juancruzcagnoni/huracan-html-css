@@ -1,4 +1,4 @@
-/* MAPAS */
+/* Mapas */
 $colores: (
     color1: rgb(244, 9, 9),
     color2: rgb(22, 22, 22),
@@ -9,8 +9,7 @@ $color1: map-get($colores, color1);
 $color2: map-get($colores, color2);
 $color3: map-get($colores, color3);
 
-/* NORMALIZE */
-
+/* Normalize */
 * {
     padding: 0;
     margin: 0;
@@ -27,8 +26,7 @@ $color3: map-get($colores, color3);
     margin: 0 auto;
 }
 
-/* NAVBAR */
-
+/* Navbar */
 .navbar {
     background-color: $color2;
     position: fixed;
@@ -62,9 +60,7 @@ $color3: map-get($colores, color3);
     }
 }
 
-
-/* MAIN  */
-
+/* Main  */
 .body1{
     background-color: rgb(246, 239, 239);
 }
@@ -97,19 +93,16 @@ main {
     font-weight: 200;
 }
 
-// MIXIN
-
+// Mixin
 @mixin card ($radius, $eje1, $eje2, $eje3) {
     border-radius: $radius;
     box-shadow: rgba(0, 0, 0, 0.1) $eje1 $eje2 $eje3;
 }
 
-/* ULTIMAS NOTICIAS */
-
+/* Noticias */
 .arecodias{
-    
     font-size: 12px;
-    
+
     a{
         text-decoration: none;
         font-size: 12px;
@@ -121,7 +114,6 @@ main {
 .linkareco:hover{
     font-weight: bold;
 }
-
 
 h5 {
     border-bottom: solid 0.5px $color1;
@@ -232,8 +224,7 @@ h5 {
     color: rgba(72, 72, 72, 0.638);
 }
 
-// VIDEO
-
+// Video 
 .video {
     padding-bottom: 50px;
 }
@@ -252,8 +243,7 @@ h5 {
     color: $color1;
 }
 
-/* FUTBOL */
-
+// Futbol
 .futbol {
     margin-top: 100px;
 }
@@ -272,14 +262,12 @@ h5 {
     }
 }
 
-/* HOCKEY */
-
+// Hockey 
 .hockey {
     @extend .futbol;
 }
 
-/* HISTORIA */
-
+// Historia 
 .historia {
     @extend .futbol;
 }
@@ -288,8 +276,7 @@ h5 {
     border-radius: 5px;
 }
 
-/* CONTACTO */
-
+// Contacto 
 .contacto {
     @extend .futbol;
 }
@@ -330,8 +317,7 @@ h5 {
     border-radius: 4px;
 }
 
-/* FOOTER */
-
+// Footer 
 .footer {
     background-color: $color2;
     border-bottom: $color1 5px solid;
@@ -372,7 +358,6 @@ h5 {
         transition: all 0.3s ease-in-out;
     }
 }
-
 
 .footer-bottom{
     border-top: 0.5px solid rgba(124, 124, 124, 0.159);
